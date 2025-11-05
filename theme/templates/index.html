@@ -1,9 +1,11 @@
 {% extends 'includes/base.html' %}
 {% load static %}
 {% block content %}
-<section class="max-w-7xl mx-auto pr-10">
 
-  <!-- Hero Section -->
+
+<!-- Hero Section -->
+
+<section class="max-w-7xl mx-auto pr-10">
   <section class="flex justify-between items-center px-5 py-5">
     <!-- Left Text -->
     <div class="max-w-xl space-y-6">
@@ -32,7 +34,7 @@
       <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-100 rounded-full blur-3xl opacity-40"></div>
 
       <div class="relative z-10">
-        <img src="https://images.unsplash.com/photo-1604908177079-8c6e6b1e7a54?auto=format&fit=crop&w=500&q=80" alt="Salmon Salad" class="rounded-full shadow-lg w-[420px] h-[420px] object-cover" />
+        <img src="{% static 'images/burger1.jpg' %}" alt="Salmon Salad" class="rounded-full shadow-lg w-[420px] h-[420px] object-cover" />
       </div>
 
       <!-- Food Categories -->
@@ -62,4 +64,78 @@
   </section>
 
 </section>
+
+
+
+<!-- popular dishes section -->
+ 
+<section class="px-16 py-14">
+    <div class="flex justify-between items-center mb-8">
+      <h2 class="text-3xl font-extrabold text-gray-900">Popular Dishes</h2>
+      <div class="flex space-x-3">
+        <!-- <button class="w-10 h-10 border border-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-100">←</button>
+        <button class="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center hover:bg-yellow-600">→</button> -->
+      </div>
+    </div>
+
+    <!-- Slider (scrollable without JS) -->
+    <div class="overflow-x-auto scroll-smooth">
+      <div class="flex space-x-6 pb-4 justify-center">
+
+        <!-- Card 1 -->
+        <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0">
+          <img src="{% static 'images/pizza1.jpg' %}" alt="Pasta" class="w-100 h-50 mb-4 object-cover rounded-2xl">
+          <div class="w-auto">
+            <h3 class="font-bold text-lg mb-1">Pasta</h3>
+            <div class="text-yellow-500 mb-2">★★★★★</div>
+            <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-gray-900">$35.00</span>
+              <button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button>
+          </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0">
+          <img src="{% static 'images/sandwich1.jpg' %}" alt="French Fries" class="w-100 h-50 mx-auto mb-4 object-cover rounded-2xl">
+          <h3 class="font-bold text-lg mb-1">French Fries</h3>
+          <div class="text-yellow-500 mb-2">★★★★☆</div>
+          <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-gray-900">$55.00</span>
+            <button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0">
+          <img src="{% static 'images/donut1.jpg' %}" alt="Chicken Shawarma" class="w-100 h-50 mb-4 object-cover rounded-2xl">
+          <h3 class="font-bold text-lg mb-1">Chicken Shawarma</h3>
+          <div class="text-yellow-500 mb-2">★★★★★</div>
+          <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-gray-900">$35.00</span>
+            <button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0">
+          <img src="{% static 'images/burger1.jpg' %}" alt="Fish Curry" class="w-100 h-50 mb-4 object-cover rounded-2xl">
+          <div>
+            <h3 class="font-bold text-lg mb-1">Fish Curry</h3>
+            <div class="text-yellow-500 mb-2">★★★★★</div>
+            <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-gray-900">$35.00</span>
+              <button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
 {% endblock %}
