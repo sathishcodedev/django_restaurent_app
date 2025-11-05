@@ -1,0 +1,65 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+{% block content %}
+<section class="max-w-7xl mx-auto pr-10">
+
+  <!-- Hero Section -->
+  <section class="flex justify-between items-center px-5 py-5">
+    <!-- Left Text -->
+    <div class="max-w-xl space-y-6">
+      <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">
+        We Serve The Test <br> You Love 😍
+      </h1>
+      <p class="text-gray-600 leading-relaxed">
+        This is a type of restaurant which typically serves food and drinks, in addition 
+        to light refreshments such as baked goods or snacks. The term comes from the French 
+        word meaning food.
+      </p>
+
+      <div class="flex space-x-4 pt-2">
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-full shadow-md">
+          Explore Food
+        </button>
+        <button class="border border-yellow-500 text-yellow-600 px-6 py-3 rounded-full hover:bg-yellow-50">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="relative">
+      <div class="absolute -top-10 -left-8 w-20 h-20 bg-green-100 rounded-full blur-2xl opacity-40"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-100 rounded-full blur-3xl opacity-40"></div>
+
+      <div class="relative z-10">
+        <img src="https://images.unsplash.com/photo-1604908177079-8c6e6b1e7a54?auto=format&fit=crop&w=500&q=80" alt="Salmon Salad" class="rounded-full shadow-lg w-[420px] h-[420px] object-cover" />
+      </div>
+
+      <!-- Food Categories -->
+      <div class="absolute right-[-160px] top-1/2 -translate-y-1/2 space-y-4">
+        <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
+          <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" class="w-5 h-5" alt="">
+          <span class="font-medium text-gray-700">Dishes</span>
+        </div>
+        <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
+          <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" class="w-5 h-5" alt="">
+          <span class="font-medium text-gray-700">Dessert</span>
+        </div>
+        <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
+          <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png" class="w-5 h-5" alt="">
+          <span class="font-medium text-gray-700">Drinks</span>
+        </div>
+        <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
+          <img src="https://cdn-icons-png.flaticon.com/512/3501/3501248.png" class="w-5 h-5" alt="">
+          <span class="font-medium text-gray-700">Platter</span>
+        </div>
+        <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
+          <img src="https://cdn-icons-png.flaticon.com/512/706/706200.png" class="w-5 h-5" alt="">
+          <span class="font-medium text-gray-700">Snacks</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+{% endblock %}
