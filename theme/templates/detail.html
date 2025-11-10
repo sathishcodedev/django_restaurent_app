@@ -1,0 +1,42 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="max-w-7xl mx-auto">
+
+  <section class="grid sm:grid-cols-2 lg:grid-cols-4 mt-5">
+              <body class="gap-6 flex justify-center items-center">
+                  <!-- Card 1 -->
+                   {% if posts %}
+                    {% for post in posts %}
+                      <div class="flex flex-col text-black items-center rounded-xl shadow-md h-auto p-2 m-2" style="background-color: #ffffff;">
+                        <img src="{% static 'img/' %}{{post.img_url}}" alt="{{post.category.name}}" class="w-full h-50 object-cover rounded-2xl">
+                        <h2 class="text-lg font-bold mt-3">{{post.title | truncatewords:3}}</h2>
+  
+                        <!-- rating start count set from database -->
+                        <div class="text-yellow-500 text-2xl">
+                          {% for i in '12345' %}
+                            {% if forloop.counter <= post.rating %}
+                              ★
+                            {% else %}
+                              ☆
+                            {% endif %}
+                          {% endfor %}
+                          </div>
+                          <h2 class="text-md font-light mt-1">{{post.content}}</h2>
+                          <div class="flex justify-between items-center mt-3 w-full b-0 px-4">
+                            <p class="font-bold">${{post.price}}</p>
+                            <a href="#"><p class="text-sm border-2 border-yellow-500 px-3 py-2 rounded-full font-bold">Add to Cart</p></a>
+                        </div>
+                      </div>
+                      {% endfor %}
+                    {% else %}
+                      <div>
+                        <p>Posts Not available</p>
+                      </div>
+                    {% endif %}
+              </body> 
+  </section>
+</div>
+
+{% endblock %}
