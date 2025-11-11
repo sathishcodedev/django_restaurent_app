@@ -2,271 +2,268 @@
 {% load static %}
 {% block content %}
 
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto pr-10">
+    <section class="flex justify-between items-center px-5 py-5">
+      <!-- Left Text -->
+      <div class="max-w-xl space-y-6">
+        <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">
+          We Serve The Test <br> You Love 😍
+        </h1>
+        <p class="text-gray-600 leading-relaxed">
+          This is a type of restaurant which typically serves food and drinks, in addition 
+          to light refreshments such as baked goods or snacks. The term comes from the French 
+          word meaning food.
+        </p>
 
-<!-- Hero Section -->
-
-<section class="max-w-7xl mx-auto pr-10">
-  <section class="flex justify-between items-center px-5 py-5">
-    <!-- Left Text -->
-    <div class="max-w-xl space-y-6">
-      <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">
-        We Serve The Test <br> You Love 😍
-      </h1>
-      <p class="text-gray-600 leading-relaxed">
-        This is a type of restaurant which typically serves food and drinks, in addition 
-        to light refreshments such as baked goods or snacks. The term comes from the French 
-        word meaning food.
-      </p>
-
-      <div class="flex space-x-4 pt-2">
-        <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-full shadow-md">
-          Explore Food
-        </button>
-        <button class="border border-yellow-500 text-yellow-600 px-6 py-3 rounded-full hover:bg-yellow-50">
-          Search
-        </button>
-      </div>
-    </div>
-
-    <!-- Right Image -->
-    <div class="relative">
-      <div class="absolute -top-10 -left-8 w-20 h-20 bg-green-100 rounded-full blur-2xl opacity-40"></div>
-      <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-100 rounded-full blur-3xl opacity-40"></div>
-
-      <div class="relative z-10">
-        <img src="{% static 'images/burger1.jpg' %}" alt="Salmon Salad" class="rounded-full shadow-lg w-[420px] h-[420px] object-cover" />
-      </div>
-
-      <!-- Food Categories -->
-      <div class="absolute right-[-160px] top-1/2 -translate-y-1/2 space-y-4">
-        <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
-          <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" class="w-5 h-5" alt="">
-          <span class="font-medium text-gray-700">Dishes</span>
-        </div>
-        <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
-          <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" class="w-5 h-5" alt="">
-          <span class="font-medium text-gray-700">Dessert</span>
-        </div>
-        <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
-          <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png" class="w-5 h-5" alt="">
-          <span class="font-medium text-gray-700">Drinks</span>
-        </div>
-        <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
-          <img src="https://cdn-icons-png.flaticon.com/512/3501/3501248.png" class="w-5 h-5" alt="">
-          <span class="font-medium text-gray-700">Platter</span>
-        </div>
-        <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
-          <img src="https://cdn-icons-png.flaticon.com/512/706/706200.png" class="w-5 h-5" alt="">
-          <span class="font-medium text-gray-700">Snacks</span>
+        <div class="flex space-x-4 pt-2">
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-full shadow-md">
+            Explore Food
+          </button>
+          <button class="border border-yellow-500 text-yellow-600 px-6 py-3 rounded-full hover:bg-yellow-50">
+            Search
+          </button>
         </div>
       </div>
-    </div>
+
+      <!-- Right Image -->
+      <div class="relative">
+        <div class="absolute -top-10 -left-8 w-20 h-20 bg-green-100 rounded-full blur-2xl opacity-40"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-100 rounded-full blur-3xl opacity-40"></div>
+
+        <div class="relative z-10">
+          <img src="{% static 'images/burger1.jpg' %}" alt="Salmon Salad" class="rounded-full shadow-lg w-[420px] h-[420px] object-cover" />
+        </div>
+
+        <!-- Food Categories -->
+        <div class="absolute right-[-160px] top-1/2 -translate-y-1/2 space-y-4">
+          <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
+            <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" class="w-5 h-5" alt="">
+            <span class="font-medium text-gray-700">Dishes</span>
+          </div>
+          <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
+            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" class="w-5 h-5" alt="">
+            <span class="font-medium text-gray-700">Dessert</span>
+          </div>
+          <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
+            <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png" class="w-5 h-5" alt="">
+            <span class="font-medium text-gray-700">Drinks</span>
+          </div>
+          <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
+            <img src="https://cdn-icons-png.flaticon.com/512/3501/3501248.png" class="w-5 h-5" alt="">
+            <span class="font-medium text-gray-700">Platter</span>
+          </div>
+          <div class="flex items-center space-x-2 bg-white shadow-md px-4 py-2 rounded-full hover:bg-yellow-50 cursor-pointer">
+            <img src="https://cdn-icons-png.flaticon.com/512/706/706200.png" class="w-5 h-5" alt="">
+            <span class="font-medium text-gray-700">Snacks</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </section>
-
-</section>
 
 
 
 <!-- popular dishes section -->
- 
-<section class="px-16 py-14">
-    <div class="flex justify-between items-center mb-8">
-      <h2 class="text-3xl font-extrabold text-gray-900">Popular Dishes</h2>
-      <div class="flex space-x-3">
-        <!-- <button class="w-10 h-10 border border-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-100">←</button>
-        <button class="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center hover:bg-yellow-600">→</button> -->
+  <section class="px-16 py-14">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-3xl font-extrabold text-gray-900">Popular Dishes</h2>
+        <div class="flex space-x-3">
+          <!-- <button class="w-10 h-10 border border-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-100">←</button>
+          <button class="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center hover:bg-yellow-600">→</button> -->
+        </div>
       </div>
-    </div>
 
-    <!-- Slider (scrollable without JS) -->
-    <div class="overflow-x-auto scroll-smooth">
-      <div class="flex space-x-6 pb-4 justify-center">
+      <!-- Slider (scrollable without JS) -->
+      <div class="overflow-x-auto">
+        <div class="flex space-x-6 pb-4 justify-center">
 
-        <!-- Card 1 -->
-        <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0 relative">
-          <img src="{% static 'images/pizza1.jpg' %}" alt="Pizza" class="w-100 h-50 mx-auto mb-4 object-cover rounded-2xl">
-          <div class="absolute z-11 top-8 left-4 flex flex-row justify-between w-[270px] pr-2">
-            <p class="bg-[#FFF9F2] font-bold rounded-1xl px-2 py-1 rounded-2xl">50% OFF</p>
-            <p class="text-white">50% OFF</p>
-          </div>
-            <h3 class="font-bold text-lg mb-1">Shape of pizza yummy and tasty</h3>
-            <div class="text-yellow-500 mb-2">★★★★★</div>
-            <p class="text-gray-600 text-sm mb-4">pizza is a type of food typically made from an unleavened dough.</p>
-            <div class="flex justify-between items-center">
-              <span class="font-bold text-gray-900">$35.00</span>
-              <a href="{% url 'blog:detail_page' id=1 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
+          <!-- Card 1 -->
+          <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0 relative">
+            <img src="{% static 'images/pizza1.jpg' %}" alt="Pizza" class="w-100 h-50 mx-auto mb-4 object-cover rounded-2xl">
+            <div class="absolute z-11 top-8 left-4 flex flex-row justify-between w-[270px] pr-2">
+              <p class="bg-[#FFF9F2] font-bold rounded-1xl px-2 py-1 rounded-2xl">50% OFF</p>
+              <p class="text-white text-2xl">☆</p>
             </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0">
-          <img src="{% static 'images/sandwich1.jpg' %}" alt="sandwich" class="w-100 h-50 mx-auto mb-4 object-cover rounded-2xl">
-          <h3 class="font-bold text-lg mb-1">Sandwich are level of throwing love</h3>
-            <div class="text-yellow-500 mb-2">★★★★☆</div>
-              <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
-            <div class="flex justify-between items-center">
-              <span class="font-bold text-gray-900">$55.00</span>
-              <a href="{% url 'blog:detail_page' id=4 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0">
-          <img src="{% static 'images/donut1.jpg' %}" alt="Donut" class="w-100 h-50 mb-4 object-cover rounded-2xl">
-          <h3 class="font-bold text-lg mb-1">Donut is a multiple time tasty and loving dishes</h3>
-          <div class="text-yellow-500 mb-2">★★★★★</div>
-          <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
-          <div class="flex justify-between items-center">
-            <span class="font-bold text-gray-900">$35.00</span>
-            <a href="{% url 'blog:detail_page' id=3 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
+              <h3 class="font-bold text-lg mb-1">Shape of pizza yummy and tasty</h3>
+              <div class="text-yellow-500 mb-2">★★★★★</div>
+              <p class="text-gray-600 text-sm mb-4">pizza is a type of food typically made from an unleavened dough.</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-gray-900">$35.00</span>
+                <a href="{% url 'blog:detail_page' id=1 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
+              </div>
           </div>
-        </div>
 
-        <!-- Card 4 -->
-        <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0">
-          <img src="{% static 'images/burger1.jpg' %}" alt="burger" class="w-100 h-50 mb-4 object-cover rounded-2xl">
-          <div>
-            <h3 class="font-bold text-lg mb-1">Burger made relationship with your partner</h3>
+          <!-- Card 2 -->
+          <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0">
+            <img src="{% static 'images/sandwich1.jpg' %}" alt="sandwich" class="w-100 h-50 mx-auto mb-4 object-cover rounded-2xl">
+            <h3 class="font-bold text-lg mb-1">Sandwich are level of throwing love</h3>
+              <div class="text-yellow-500 mb-2">★★★★☆</div>
+                <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-gray-900">$55.00</span>
+                <a href="{% url 'blog:detail_page' id=4 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
+              </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0">
+            <img src="{% static 'images/donut1.jpg' %}" alt="Donut" class="w-100 h-50 mb-4 object-cover rounded-2xl">
+            <h3 class="font-bold text-lg mb-1">Donut is a multiple time tasty and loving dishes</h3>
             <div class="text-yellow-500 mb-2">★★★★★</div>
             <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
             <div class="flex justify-between items-center">
               <span class="font-bold text-gray-900">$35.00</span>
-              <a href="{% url 'blog:detail_page' id=2 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
+              <a href="{% url 'blog:detail_page' id=3 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
+            </div>
           </div>
+
+          <!-- Card 4 -->
+          <div class="w-[300px] flex-col bg-white rounded-2xl shadow-md p-4 text-center flex-shrink-0">
+            <img src="{% static 'images/burger1.jpg' %}" alt="burger" class="w-100 h-50 mb-4 object-cover rounded-2xl">
+            <div>
+              <h3 class="font-bold text-lg mb-1">Burger made relationship with your partner</h3>
+              <div class="text-yellow-500 mb-2">★★★★★</div>
+              <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-gray-900">$35.00</span>
+                <a href="{% url 'blog:detail_page' id=2 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
+            </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-</section>
-
-
-<!-- service content section -->
-  <section class="flex flex-col md:flex-row items-center justify-center gap-12 px-8 py-16 max-w-6xl mx-auto">
-    
-    <!-- Left Image Section -->
-    <div class="relative">
-      <div class="w-80 h-80 rounded-full overflow-hidden relative">
-        <img src="{% static 'images/icecake.jpg' %}" alt="Chef" class="absolute inset-0 w-full h-full object-cover z-10">
-        <img src="{% static 'images/cupcakes.jpg' %} alt="Food background" class="absolute inset-0 w-full h-full object-cover opacity-70">
-      </div>
-      <img src="{% static 'images/chococake.jpg' %}" alt="Veggies" class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-24">
-      <img src="{% static 'images/cake.jpg' %}" alt="Tofu" class="absolute -bottom-6 -left-10 w-16">
-    </div>
-
-    <!-- Right Content Section -->
-    <div class="max-w-lg">
-      <h2 class="text-4xl font-extrabold text-gray-900 mb-4 leading-snug">
-        We Are More Than <br> Multiple Survice
-      </h2>
-      <p class="text-gray-600 mb-8">
-        This is a type of restaurant which typically serves food and drinks, in addition to light refreshments such as baked goods or snacks. 
-        The term comes from the French word meaning food.
-      </p>
-
-      <!-- Services List -->
-      <div class="grid grid-cols-2 gap-4 mb-8 text-sm font-medium text-gray-700">
-        <div class="flex items-center gap-2">
-          <span class="text-blue-500 text-lg">📱</span> Online Order
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-pink-500 text-lg">📅</span> Pre-Reservation
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-yellow-500 text-lg">⏰</span> 24/7 Service
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-green-500 text-lg">🍽</span> Organized Foodie Place
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-purple-500 text-lg">🧼</span> Clean Kitchen
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-red-500 text-lg">👨‍🍳</span> Super Chefs
-        </div>
-      </div>
-
-      <!-- Button -->
-      <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-full shadow-md transition">
-        About Us
-      </button>
-    </div>
-
   </section>
 
-<!-- regular menu pack -->
 
-<section>
-    <div class="max-w-7xl mx-auto p-6 mt-5 text-center">
-      <div class="text-3xl font-extrabold text-gray-900">
-        <p>Our Regular Menu Pack</p>
-      </div>
-      <!-- menu grid section -->
-      <div class="flex flex-row mt-10 items-center justify-center">
-          <a href="{% url 'blog:index_page' %}"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
-            <h1>All</h1>
-          </div></a>
-          <a href="?category=1"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
-            <h1>Pizza</h1>
-          </div></a>
-          <a href="?category=2"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
-            <h1>Burger</h1>
-          </div></a>
-          <a href="?category=3"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
-            <h1>Donut</h1>
-          </div></a>
-          <a href="?category=4"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
-            <h1>Sandwich</h1>
-          </div></a>
-          <a href="#"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
-            <h1>Drinks</h1>
-          </div></a>
-          <a href="#"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
-            <h1>Dessert</h1>
-          </div></a>
-      </div>
-
-      <!-- product grid section -->
-
-        <section class="grid sm:grid-cols-2 lg:grid-cols-4 mt-5">
-            <body class="gap-6 flex justify-center items-center">
-                <!-- Card 1 -->
-                 {% if posts %}
-                  {% for post in posts %}
-                    <div class="flex flex-col text-black items-center rounded-xl shadow-md h-auto p-2 m-2" style="background-color: #ffffff;">
-                      <img src="{% static 'img/' %}{{post.img_url}}" alt="{{post.category.name}}" class="w-full h-50 object-cover rounded-2xl">
-                      <h2 class="text-lg font-bold mt-3">{{post.title | truncatewords:3}}</h2>
-
-                      <!-- rating start count set from database -->
-                      <div class="text-yellow-500 text-2xl">
-                        {% for i in '12345' %}
-                          {% if forloop.counter <= post.rating %}
-                            ★
-                          {% else %}
-                            ☆
-                          {% endif %}
-                        {% endfor %}
-                        </div>
-                        <h2 class="text-md font-light mt-1">{{post.content}}</h2>
-                        <div class="flex justify-between items-center mt-3 w-full b-0 px-4">
-                          <p class="font-bold">${{post.price}}</p>
-                          <a href="#"><p class="text-sm border-2 border-yellow-500 px-3 py-2 rounded-full font-bold">Add to Cart</p></a>
-                      </div>
-                    </div>
-                    {% endfor %}
-                  {% else %}
-                    <div>
-                      <p>Posts Not available</p>
-                    </div>
-                  {% endif %}
-            </body> 
-        </section>
-        <div class="flex justify-center my-10">
-          <p class="border-2 border-yellow-600 px-4 py-2 rounded-full font-bold">More</p>
+  <!-- service content section -->
+    <section class="flex flex-col md:flex-row items-center justify-center gap-12 px-8 py-16 max-w-6xl mx-auto">
+      
+      <!-- Left Image Section -->
+      <div class="relative">
+        <div class="w-80 h-80 rounded-full overflow-hidden relative">
+          <img src="{% static 'images/icecake.jpg' %}" alt="Chef" class="absolute inset-0 w-full h-full object-cover z-10">
+          <img src="{% static 'images/cupcakes.jpg' %} alt="Food background" class="absolute inset-0 w-full h-full object-cover opacity-70">
         </div>
-    </div>
-</section>
+        <img src="{% static 'images/chococake.jpg' %}" alt="Veggies" class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-24">
+        <img src="{% static 'images/cake.jpg' %}" alt="Tofu" class="absolute -bottom-6 -left-10 w-16">
+      </div>
 
-<!-- reservation section -->
+      <!-- Right Content Section -->
+      <div class="max-w-lg">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4 leading-snug">
+          We Are More Than <br> Multiple Survice
+        </h2>
+        <p class="text-gray-600 mb-8">
+          This is a type of restaurant which typically serves food and drinks, in addition to light refreshments such as baked goods or snacks. 
+          The term comes from the French word meaning food.
+        </p>
+
+        <!-- Services List -->
+        <div class="grid grid-cols-2 gap-4 mb-8 text-sm font-medium text-gray-700">
+          <div class="flex items-center gap-2">
+            <span class="text-blue-500 text-lg">📱</span> Online Order
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-pink-500 text-lg">📅</span> Pre-Reservation
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-yellow-500 text-lg">⏰</span> 24/7 Service
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-green-500 text-lg">🍽</span> Organized Foodie Place
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-purple-500 text-lg">🧼</span> Clean Kitchen
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-red-500 text-lg">👨‍🍳</span> Super Chefs
+          </div>
+        </div>
+
+        <!-- Button -->
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-full shadow-md transition">
+          About Us
+        </button>
+      </div>
+
+    </section>
+
+  <!-- regular menu pack -->
+
+  <section>
+      <div class="max-w-7xl mx-auto p-6 mt-5 text-center">
+        <div class="text-3xl font-extrabold text-gray-900">
+          <p>Our Regular Menu Pack</p>
+        </div>
+        <!-- menu grid section -->
+        <div class="flex flex-row mt-10 items-center justify-center">
+            <a href="{% url 'blog:index_page' %}"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+              <h1>All</h1>
+            </div></a>
+            <a href="?category=1"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+              <h1>Pizza</h1>
+            </div></a>
+            <a href="?category=2"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+              <h1>Burger</h1>
+            </div></a>
+            <a href="?category=3"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+              <h1>Donut</h1>
+            </div></a>
+            <a href="?category=4"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+              <h1>Sandwich</h1>
+            </div></a>
+            <a href="#"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+              <h1>Drinks</h1>
+            </div></a>
+            <a href="#"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+              <h1>Dessert</h1>
+            </div></a>
+        </div>
+
+        <!-- product grid section -->
+
+          <section class="grid sm:grid-cols-2 lg:grid-cols-4 mt-5">
+              <body class="gap-6 flex justify-center items-center">
+                  <!-- Card 1 -->
+                  {% if posts %}
+                    {% for post in posts %}
+                      <div class="flex flex-col text-black items-center rounded-xl shadow-md h-auto p-2 m-2" style="background-color: #ffffff;">
+                        <img src="{% static 'img/' %}{{post.img_url}}" alt="{{post.category.name}}" class="w-full h-50 object-cover rounded-2xl">
+                        <h2 class="text-lg font-bold mt-3">{{post.title | truncatewords:3}}</h2>
+
+                        <!-- rating start count set from database -->
+                        <div class="text-yellow-500 text-2xl">
+                          {% for i in '12345' %}
+                            {% if forloop.counter <= post.rating %}
+                              ★
+                            {% else %}
+                              ☆
+                            {% endif %}
+                          {% endfor %}
+                          </div>
+                          <h2 class="text-md font-light mt-1">{{post.content}}</h2>
+                          <div class="flex justify-between items-center mt-3 w-full b-0 px-4">
+                            <p class="font-bold">${{post.price}}</p>
+                            <a href="#"><p class="text-sm border-2 border-yellow-500 px-3 py-2 rounded-full font-bold">Add to Cart</p></a>
+                        </div>
+                      </div>
+                      {% endfor %}
+                    {% else %}
+                      <div>
+                        <p>Posts Not available</p>
+                      </div>
+                    {% endif %}
+              </body> 
+          </section>
+          <div class="flex justify-center my-10">
+            <a hx-get="{% url 'blog:text_page' %}" hx-target="body" hx-swap="outerHTML" hx-push-url="true" href=""><p class="border-2 border-yellow-600 px-4 py-2 rounded-full font-bold">More</p></a>
+          </div>
+      </div>
+    </section>
+
+  <!-- reservation section -->
 
   <div class="max-w-6xl mx-auto flex flex-col my-10 md:flex-row items-center px-6 md:px-12 gap-10">
     
@@ -296,5 +293,4 @@
     </div>
 
   </div>
-
 {% endblock %}

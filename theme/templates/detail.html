@@ -3,9 +3,8 @@
 {% block content %}
 
 <div class="max-w-7xl mx-auto">
-
   <section class="grid sm:grid-cols-2 lg:grid-cols-4 mt-5">
-              <body class="gap-6 flex justify-center items-center">
+    <body class="gap-6 flex justify-center items-center">
                   <!-- Card 1 -->
                    {% if posts %}
                     {% for post in posts %}
@@ -35,7 +34,7 @@
                         <p>Posts Not available</p>
                       </div>
                     {% endif %}
-              </body> 
+    </body> 
   </section>
 </div>
 
