@@ -15,11 +15,13 @@ def index(request):
 
 def detailview(request, id):
 
-    posts = Post.objects.all()
+    # posts = Post.objects.all()
     
     detail_category = Post.objects.filter(category=id)
 
-    return render(request, 'detail.html', {'posts':detail_category, 'post':detail_category})
+    title_category  = Post.objects.filter(category=id)[:1]
+
+    return render(request, 'detail.html', {'posts':detail_category, 'post1':title_category})
 
 def textview(request):
     return render(request, 'parse.html')

@@ -2,7 +2,12 @@
 {% load static %}
 {% block content %}
 
-<div class="max-w-7xl mx-auto">
+<div class="max-w-7xl mx-auto mb-10">
+  {% for post in post1 %}
+  <div>
+    <p class="text-2xl text-black font-bold">this is a {{ post.category.name }} category</p>
+  </div>
+  {% endfor %}
   <section class="grid sm:grid-cols-2 lg:grid-cols-4 mt-5">
     <body class="gap-6 flex justify-center items-center">
                   <!-- Card 1 -->
