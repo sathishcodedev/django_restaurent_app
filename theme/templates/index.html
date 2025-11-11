@@ -91,7 +91,8 @@
               <p class="text-gray-600 text-sm mb-4">pizza is a type of food typically made from an unleavened dough.</p>
               <div class="flex justify-between items-center">
                 <span class="font-bold text-gray-900">$35.00</span>
-                <a href="{% url 'blog:detail_page' id=1 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
+                <!-- htmx are used to didnt refresh browser get content -->
+                <a hx-get="{% url 'blog:detail_page' id=1 %}" hx-target="body" hx-swap="outerHTML" hx-push-url="true"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
               </div>
           </div>
 
@@ -103,7 +104,8 @@
                 <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
               <div class="flex justify-between items-center">
                 <span class="font-bold text-gray-900">$55.00</span>
-                <a href="{% url 'blog:detail_page' id=4 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
+                <!-- htmx are used to didnt refresh browser get content -->
+                <a hx-get="{% url 'blog:detail_page' id=4 %}" hx-target="body" hx-swap="outerHTML" hx-push-url="true"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
               </div>
           </div>
 
@@ -115,7 +117,8 @@
             <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
             <div class="flex justify-between items-center">
               <span class="font-bold text-gray-900">$35.00</span>
-              <a href="{% url 'blog:detail_page' id=3 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
+              <!-- htmx are used to didnt refresh browser get content -->
+              <a hx-get="{% url 'blog:detail_page' id=3 %}" hx-target="body" hx-swap="outerHTML" hx-push-url="true"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
             </div>
           </div>
 
@@ -128,7 +131,7 @@
               <p class="text-gray-600 text-sm mb-4">Pasta is a type of food typically made from an unleavened dough.</p>
               <div class="flex justify-between items-center">
                 <span class="font-bold text-gray-900">$35.00</span>
-                <a href="{% url 'blog:detail_page' id=2 %}"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
+                <a hx-get="{% url 'blog:detail_page' id=2 %}" hx-target="body" hx-swap="outerHTML" hx-push-url="true"><button class="border border-yellow-500 text-yellow-600 px-4 py-1 rounded-full text-sm hover:bg-yellow-50">More</button></a>
             </div>
             </div>
           </div>
@@ -199,25 +202,25 @@
         </div>
         <!-- menu grid section -->
         <div class="flex flex-row mt-10 items-center justify-center">
-            <a href="{% url 'blog:index_page' %}"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+            <a hx-get="{% url 'blog:index_page' %}" hx-target="body" hx-push-url="true"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
               <h1>All</h1>
             </div></a>
-            <a href="?category=1"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+            <a hx-get="?category=1" hx-target="body"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
               <h1>Pizza</h1>
             </div></a>
-            <a href="?category=2"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+            <a hx-get="?category=2" hx-target="body"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
               <h1>Burger</h1>
             </div></a>
-            <a href="?category=3"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+            <a hx-get="?category=3" hx-target="body"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
               <h1>Donut</h1>
             </div></a>
-            <a href="?category=4"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+            <a hx-get="?category=4" hx-target="body"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
               <h1>Sandwich</h1>
             </div></a>
-            <a href="#"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+            <a hx-get="?" hx-target="body"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
               <h1>Drinks</h1>
             </div></a>
-            <a href="#"><div class="px-5 py-2 border-yellow-500 border-2 rounded-full mr-5">
+            <a hx-get="?" hx-target="body"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
               <h1>Dessert</h1>
             </div></a>
         </div>
