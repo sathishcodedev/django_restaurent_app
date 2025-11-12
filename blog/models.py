@@ -30,3 +30,12 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+class CartItem(models.Model):
+    session_key = models.CharField(max_length=100, null=True, db_index=True)
+    food = models.ForeignKey(Post, on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField(default=1)
+
+    def total(self):
+        return self.food.price * self.quantity

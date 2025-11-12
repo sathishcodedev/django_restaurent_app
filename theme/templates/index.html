@@ -217,10 +217,10 @@
             <a hx-get="?category=4" hx-target="body"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
               <h1>Sandwich</h1>
             </div></a>
-            <a hx-get="?" hx-target="body"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
+            <a hx-get="#" hx-target="body"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
               <h1>Drinks</h1>
             </div></a>
-            <a hx-get="?" hx-target="body"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
+            <a hx-get="#" hx-target="body"><div class="px-5 py-2 cursor-pointer border-yellow-500 border-2 rounded-full mr-5">
               <h1>Dessert</h1>
             </div></a>
         </div>
@@ -249,7 +249,7 @@
                           <h2 class="text-md font-light mt-1">{{post.content}}</h2>
                           <div class="flex justify-between items-center mt-3 w-full b-0 px-4">
                             <p class="font-bold">${{post.price}}</p>
-                            <a href="#"><p class="text-sm border-2 border-yellow-500 px-3 py-2 rounded-full font-bold">Add to Cart</p></a>
+                            <a hx-get="{% url 'blog:cartdetail_page' slug=post.slug %}" hx-target="body" hx-swap="outerHTML" hx-push-url="true"><p class="text-sm border-2 border-yellow-500 px-3 py-2 rounded-full font-bold">Add to Cart</p></a>
                         </div>
                       </div>
                       {% endfor %}

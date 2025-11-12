@@ -30,7 +30,7 @@
                           <h2 class="text-md font-light mt-1">{{post.content}}</h2>
                           <div class="flex justify-between items-center mt-3 w-full b-0 px-4">
                             <p class="font-bold">${{post.price}}</p>
-                            <a href="#"><p class="text-sm border-2 border-yellow-500 px-3 py-2 rounded-full font-bold">Add to Cart</p></a>
+                            <a hx-get="{% url 'blog:cartdetail_page' slug=post.slug %}" hx-target="body" hx-swap="outerHTML" hx-push-url="true"><p class="text-sm border-2 cursor-pointer border-yellow-500 px-3 py-2 rounded-full font-bold">Add to Cart</p></a>
                         </div>
                       </div>
                       {% endfor %}

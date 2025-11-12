@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% tailwind_css %}
-    <script src="{% static 'js/htmx.min.js' %}"></script>
-    <script src="{% static 'js/alpine.min.js' %}"></script>
+    <script defer src="{% static 'js/htmx.min.js' %}"></script>
+    <script defer src="{% static 'js/alpine.min.js' %}"></script>
 </head>
 
 <body id="main" class="max-w-5xlmx-auto bg-[#FFF9F2] text-gray-800 font-sans">
@@ -21,6 +21,12 @@
     {% endblock %}
 
     {% include 'includes/footer.html' %}
+
+    <script>
+        document.body.addEventListener('htmx:configRequest', (event) => {
+            event.detail.headers['X-CSRFToken'] = '{{csrf_token}}'
+        });
+    </script>
 
 </body>
 </html>
